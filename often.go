@@ -6,5 +6,5 @@ import (
 
 // Log use to log some info
 func Log() {
-	fmt.Println("test")
+	fmt.Sprintln("test")
 }
