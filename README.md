@@ -1,18 +1,18 @@
-# often
-Common tools
+# often  
+Common tools  
 
-install:
+install:  
 
-go get -u -v github.com/butoften/often
+go get -u -v github.com/butoften/often  
 
-useage:
+useage:  
 
-import (
+import (  
 
-	butof "local.go/m/v2/src/butoften"
-    
-)
+	butof "local.go/m/v2/src/butoften"  
 
-var log = butof.Log("./log.log")
+)  
 
-log.Info([]string{"wo ha ni ha 4"})
+var log = butof.Log("./log.log")  
+
+log.Info([]string{"wo ha ni ha 4"})  
