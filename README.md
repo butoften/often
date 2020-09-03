@@ -1,18 +1,21 @@
-# often  
-Common tools  
-
 install:  
 
 go get -u -v github.com/butoften/often  
 
-useage:  
+usage：   
 
 import (  
 
-	butof "local.go/m/v2/src/butoften"  
+	butof "github.com/butoften/often"
 
 )  
 
 var log = butof.Log("./log.log")  
 
-log.Info([]string{"wo ha ni ha 4"})  
+log.Info([]string{"this i a message"})  
+
+and you can use   
+
+tail -f path/to/log/file   
+
+and watch some change or info  
