@@ -9,9 +9,9 @@ usage：
 1.Log
 ````
 import (  
-	butof "github.com/butoften/often"
+	"github.com/butoften/often"
 )  
-var log = butof.Log("./log.log")  
+var log = often.Log("./log.log")  
 log.Info([]string{"this i a message"})  
 ````
 and you can use   
