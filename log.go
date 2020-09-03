@@ -12,7 +12,7 @@ type LogEngine struct {
 }
 
 //NewLog return a new blank Engine instance
-func NewLog(logPath string) *LogEngine {
+func newLog(logPath string) *LogEngine {
 	var writeObj *csv.Writer
 	_, er := os.Open(logPath)
 	if er != nil && os.IsNotExist(er) {
@@ -47,7 +47,7 @@ func (engine *LogEngine) Info(data []string) {
 
 // Log use to log some info
 func Log(logPath string) *LogEngine {
-	engine := NewLog(logPath)
+	engine := newLog(logPath)
 	//engine.info()
 	return engine
 }
