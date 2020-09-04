@@ -23,5 +23,5 @@ and watch some change or info
 2.cors for gin
 ````
 r := gin.Default()
-r.Use(often.Cors("xx.domain.com"))
+r.Use(often.Cors("http://xx.domain.com"))
 ````
